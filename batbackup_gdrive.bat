@@ -82,6 +82,8 @@ for /L %%i in (1,1,%FOLDER_COUNT%) do (
 ::  SECTION 4 - SUMMARY AND EMAIL
 :: ============================================================
 
+call :LOG "  DEBUG: ERR_COUNT after loop = !ERR_COUNT!"
+
 for /f %%t in ('powershell -NoProfile -Command "Get-Date -Format HH:mm:ss"') do set "END_TIME=%%t"
 
 call :LOG ""
