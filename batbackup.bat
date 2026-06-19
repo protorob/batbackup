@@ -107,12 +107,14 @@ rd /s /q "%TMP_DIR%" 2>nul
 call :SEND_EMAIL
 
 if %ERR_COUNT% gtr 0 (exit /b 1) else (exit /b 0)
+goto :eof
 
 
 :: ============================================================
 ::  SUB: PROCESS_FOLDER  <folder-index>
 :: ============================================================
 :PROCESS_FOLDER
+if "%~1"=="" goto :eof
 call set "SRC=%%FOLDER_%1%%"
 
 if "!SRC!"=="" (
