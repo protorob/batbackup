@@ -22,11 +22,11 @@ setlocal
 :: ============================================================
 
 :: -- Path to rclone executable
-set "RCLONE=C:\tools\rclone\rclone.exe"
+set "RCLONE=D:\SOFTWARE\rclone\rclone.exe"
 
 :: -- Remote name exactly as typed in: rclone config
-set "GD_REMOTE=my-gdrive"
-set "GD_DEST=Backups"
+set "GD_REMOTE=rob-drive"
+set "GD_DEST=RCLONE-ROB/BARITALIA"
 
 :: -- Archive name prefix  ->  PREFIX_FolderName_2026-06-18.zip
 set "ZIP_PREFIX=backup"
@@ -35,18 +35,18 @@ set "ZIP_PREFIX=backup"
 set "LOG_DIR=C:\Logs\batbackup"
 
 :: -- SMTP settings
-set "SMTP_HOST=smtp.gmail.com"
+set "SMTP_HOST=smtp.dreamhost.com"
 set "SMTP_PORT=587"
-set "SMTP_USER=you@gmail.com"
-set "SMTP_PASS=abcd efgh ijkl mnop"
-set "EMAIL_FROM=you@gmail.com"
-set "EMAIL_TO=recipient@example.com"
+set "SMTP_USER=vicferro@rokoenterprises.com"
+set "SMTP_PASS=culofucking"
+set "EMAIL_FROM=vicferro@rokoenterprises.com"
+set "EMAIL_TO=protorob@gmail.com"
 
 :: -- Source folders (add/remove lines; keep FOLDER_COUNT in sync)
-set "FOLDER_1=C:\Users\YourName\Documents"
-set "FOLDER_2=D:\Projects\important"
+set "FOLDER_1=C:\Users\proto\Desktop\BARITALIA"
+:: set "FOLDER_2=D:\Projects\important"
 :: set "FOLDER_3=E:\another\path"
-set "FOLDER_COUNT=2"
+set "FOLDER_COUNT=1"
 
 
 :: ============================================================
